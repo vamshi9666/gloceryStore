@@ -1,11 +1,19 @@
 {
   "name": "glocerystore",
   "version": "1.0.0",
-  "description": "a backend service for giving glocery prices in Hydwrabad",
-  "main": "index.js",
+  "description": "a backend service for giving glocery prices in Hyderabad",
   "scripts": {
     "test": "nodemon server.js"
   },
   "author": "vamshi9666",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^1.17.5"
+  },
+  "dependencies": {
+    "cheerio": "^1.0.0-rc.2",
+    "express": "^4.16.3",
+    "fs": "0.0.1-security",
+    "request": "^2.87.0"
+  }
 }
