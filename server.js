@@ -5,14 +5,17 @@ var url = "http://manarythubazar.com/Telangana/Hyderabad/Mehdipatnam";
 request(url,(err, res, body)=>{
 	if(!err){
 		var $ = cheerio.load(body);
-		let re = $('.row').children();
+		let re = $('.col-lg-12').children();
 
 
 		var prices = [];
 		re.map(index=>{
 			prices.push($('ol').children().eq(index).find("td").text());
 		})
-		console.log(prices)
+		console.log(prices);
+		for (price of prices){
+			console.log(price)
+		}
 		
 	}
 })
