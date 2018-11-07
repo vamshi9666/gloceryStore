@@ -6,7 +6,7 @@ const express = require('express')
 
 const app = express();
 
-app.use('/', (req, res,next)=> {
+app.post('/', (req, res,next)=> {
 		var url = "http://manarythubazar.com/Telangana/Hyderabad/Mehdipatnam";
 		request(url,(err, data, body)=>{
 		if(!err){
@@ -32,6 +32,6 @@ app.use('/', (req, res,next)=> {
 })
 
 
-app.listen(1000, () => {
+app.listen(2000, () => {
 	console.log(`Server listenign on port 1000`)
 })
