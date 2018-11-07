@@ -6,7 +6,7 @@ const express = require('express')
 
 const app = express();
 
-app.get('/', (req, res,next)=> {
+app.use('/', (req, res,next)=> {
 		var url = "http://manarythubazar.com/Telangana/Hyderabad/Mehdipatnam";
 		request(url,(err, data, body)=>{
 		if(!err){
